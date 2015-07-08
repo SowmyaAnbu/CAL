@@ -1,0 +1,24 @@
+[
+       {"name": "node1", "target": [17],"group":0,"s":"circle", "size":625},    
+	   {"name": "node2", "group":1,"s":"circle","size":2500},
+	   {"name": "node3", "target": [1], "group":2,"s":"circle", "size":100},
+	   {"name": "node4", "target": [0], "group":0,"s":"diamond", "size":625},
+	   {"name": "node5", "target": [1], "group":1,"s":"diamond", "size":2500},
+	   {"name": "node6", "target": [1],"group":2,"s":"diamond", "size":100},
+	   {"name": "node7", "target": [1],"group":2,"s":"square", "size":2500},
+	   {"name": "node8", "target": [1],"group":0,"s":"square", "size":100},
+	   {"name": "node9", "target": [1], "group":1,"s":"square", "size":625},
+	   {"name": "node10", "target":[1],"group":0,"s":"triangle-up", "size":625},    
+	   {"name": "node11", "target":[1],"group":1,"s":"triangle-up","size":2500},
+	   {"name": "node12", "target": [1], "group":1,"s":"triangle-up", "size":100},
+	   {"name": "node13", "target":[1],"group":0,"s":"cirlce", "size":625},    
+	   {"name": "node14", "target":[1],"group":1,"s":"circle","size":2500},
+	   {"name": "node15", "target": [1], "group":1,"s":"circle", "size":100},
+	   {"name": "node16", "target":[1],"group":0,"s":"diamond", "size":625},    
+	   {"name": "node17", "target":[1],"group":1,"s":"diamond","size":2500},
+	   {"name": "node18", "target": [1], "group":1,"s":"diamond", "size":100},
+	   {"name": "node19", "target":[1],"group":0,"s":"square", "size":625},    
+	   {"name": "node20", "target":[1],"group":1,"s":"square","size":2500},
+	   {"name": "node21", "target": [1], "group":1,"s":"square", "size":100}
+]
+

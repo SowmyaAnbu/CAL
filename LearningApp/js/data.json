@@ -1,0 +1,14 @@
+[
+  {"question"  : "click blue or square",
+   "answer"    :["node7", "node9", "node11","node20"],
+   "id"        : 0 
+  },
+  {"question"  : "click red and triangle",
+   "answer"    : ["node10", "node12"],
+   "id"        : 1
+  },
+  {"question"  :"click circle not green",
+   "answer"    : ["node1", "node14"],
+   "id"        : 2  
+  }
+]
