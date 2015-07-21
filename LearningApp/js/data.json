@@ -1,14 +1,35 @@
 [
-  {"question"  : "click blue or square",
-   "answer"    :["node7", "node9", "node11","node20"],
+  {"question"  : "select blue or square",
+   "answer"    :["node7", "node9", "node11","node20","node19"],
    "id"        : 0 
   },
-  {"question"  : "click red and triangle",
+  {"question"  : "select red and triangle",
    "answer"    : ["node10", "node12"],
    "id"        : 1
   },
-  {"question"  :"click circle not green",
-   "answer"    : ["node1", "node14"],
-   "id"        : 2  
+   {"question"  :"select circle not orange",
+   "answer"    :["node2","node15"],
+   "id"        : 2 
+  },
+  {"question" :"select diamond or orange but not at the same time",
+   "answer"   :["node1","node3","node4","node6","node14","node17"],
+   "id"       : 3
+   },
+ 
+  {
+    "question" : "select diamond that are not either large or green",
+    "answer"   : ["node16","node18"],
+    "id"       : 4
+  },
+  {
+    "question" : "If shape got four sides is true, select shapes that are not small and not purple ",
+    "answer"   : ["node7","node20","node5","node16","node4","node19"],
+    "id"       : 5
+  },
+  {
+    "question" : "Well done",
+    "answer"   : [""],
+    "id"       : 6
   }
+ 
 ]

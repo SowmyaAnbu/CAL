@@ -12,7 +12,7 @@ Array.prototype.equals = function (array) {
         if (this[i] instanceof Array && array[i] instanceof Array) {
             // recurse into the nested arrays
             if (!this[i].equals(array[i]))
-		return false;
+    return false;
         }
         else if (this[i] != array[i]) {
             // two different object instances will never be equal
@@ -34,7 +34,7 @@ if(!Array.prototype.indexOf) {
     };
 } 
 var Answer = function () {
-	 console.log('instance created');
+   console.log('instance created');
 };
 
 function replaceText() {
@@ -47,46 +47,45 @@ function replaceText() {
 
 Answer.prototype.checkAnswer = function(name){
 
-	 var scope = angular.element($("#outer")).scope();
-	 var index = scope.count;
-	 
-	  //   if((answers["q1"].indexOf(name)!=-1)){
-	  	if(scope.datalist[index].answer.indexOf(name) != -1){
-			 return true;
-		 }
-		 else{
-			 return false;
-		 }
+   var scope = angular.element($("#outer")).scope();
+   var index = scope.count;
+      if(scope.datalist[index].answer.indexOf(name) != -1){
+       return true;
+     }
+     else{
+       return false;
+     }
 };
 
-Answer.prototype.compareAnswer = function(name, selectedElements){
+Answer.prototype.checkEndOfQuestion = function(name, selectedElements){
 
-       var scope = angular.element($("#outer")).scope();
-	   var index = scope.count;
-	 
-	  
+     var scope = angular.element($("#outer")).scope();
+     var index = scope.count;
+   
+    
    // to check if the selected node is correct and will check against
    // the node is present in theanswer array
- 		if(selectedElements.length==0){
-			  selectedElements.push(name);
-		}
-
-	
-		//alert(selectedElements.indexOf(name));
-		//if selectedElements array is not empty, then check for duplicates 
-		//incase the user has clicked multiple times
-		if(selectedElements.length!=0 && selectedElements.indexOf(name) == -1){
-			   selectedElements.push(name); 
-		}	 
-			
+    if(selectedElements.length==0){
+        selectedElements.push(name);
+    }
+    //if selectedElements array is not empty, then check for duplicates 
+    //incase the user has clicked multiple times
+    if(selectedElements.length!=0 && selectedElements.indexOf(name) == -1){
+         selectedElements.push(name); 
+    }  
+      
       //  if(selectedElements.sort().equals(answers["q1"].sort())===true){
-      	if(selectedElements.sort().equals(scope.datalist[index].answer.sort())===true){
-          alert("well done");
+        if(selectedElements.sort().equals(scope.datalist[index].answer.sort())===true){
+        //  alert("well done");
           //add a trigger
-		  replaceText();
-		  while(selectedElements.length!==0){
-		  	selectedElements.pop(name);
-		  }
+      replaceText();
+      while(selectedElements.length!==0){
+        selectedElements.pop(name);
+      }
+      return true;
+       }
+       else{
+        return false;
        }
 
 
@@ -100,7 +99,13 @@ function replaceText(){
     scope.$apply(function(){
         scope.count = scope.count + 1;
     })
+    var scorescope = angular.element($("#score")).scope();
+    scorescope.$apply(function(){
+      scorescope.score=scorescope.score +1;
+    })
 }
+
+
 
 
 
